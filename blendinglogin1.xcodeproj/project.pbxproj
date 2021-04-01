@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FB062D324F3D39B6C7FBAD8 /* Pods_blendinglogin1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BA9AE16B84E00D58B56918 /* Pods_blendinglogin1.framework */; };
 		ED9CA1C42615B55700E8542D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA1C32615B55700E8542D /* AppDelegate.swift */; };
 		ED9CA1C62615B55700E8542D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA1C52615B55700E8542D /* SceneDelegate.swift */; };
-		ED9CA1C82615B55700E8542D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA1C72615B55700E8542D /* ViewController.swift */; };
 		ED9CA1CB2615B55700E8542D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9CA1C92615B55700E8542D /* Main.storyboard */; };
 		ED9CA1CD2615B55800E8542D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9CA1CC2615B55800E8542D /* Assets.xcassets */; };
 		ED9CA1D02615B55800E8542D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9CA1CE2615B55800E8542D /* LaunchScreen.storyboard */; };
+		ED9CA1D92615B9D800E8542D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED9CA1D82615B9D800E8542D /* GoogleService-Info.plist */; };
+		ED9CA1F42615C4E900E8542D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA1F32615C4E900E8542D /* LoginViewController.swift */; };
+		ED9CA1F72615C50400E8542D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA1F62615C50400E8542D /* HomeViewController.swift */; };
+		ED9CA1FA2615C53900E8542D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA1F92615C53900E8542D /* PostViewController.swift */; };
+		ED9CA2072615C79700E8542D /* GtalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA2062615C79700E8542D /* GtalkViewController.swift */; };
+		ED9CA20B2615C7FD00E8542D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA20A2615C7FD00E8542D /* ProfileViewController.swift */; };
+		ED9CA20F2615C81C00E8542D /* TutiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA20E2615C81C00E8542D /* TutiViewController.swift */; };
+		ED9CA2132615CD9100E8542D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA2122615CD9100E8542D /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35BA9AE16B84E00D58B56918 /* Pods_blendinglogin1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blendinglogin1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		446B59A5C7B9F082F34E0BB1 /* Pods-blendinglogin1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blendinglogin1.debug.xcconfig"; path = "Target Support Files/Pods-blendinglogin1/Pods-blendinglogin1.debug.xcconfig"; sourceTree = "<group>"; };
+		7975B7DDB2C9F2413065ECFB /* Pods-blendinglogin1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blendinglogin1.release.xcconfig"; path = "Target Support Files/Pods-blendinglogin1/Pods-blendinglogin1.release.xcconfig"; sourceTree = "<group>"; };
 		ED9CA1C02615B55700E8542D /* blendinglogin1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blendinglogin1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED9CA1C32615B55700E8542D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED9CA1C52615B55700E8542D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED9CA1C72615B55700E8542D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED9CA1CA2615B55700E8542D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED9CA1CC2615B55800E8542D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED9CA1CF2615B55800E8542D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED9CA1D12615B55800E8542D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED9CA1D82615B9D800E8542D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED9CA1F32615C4E900E8542D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED9CA1F62615C50400E8542D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ED9CA1F92615C53900E8542D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		ED9CA2062615C79700E8542D /* GtalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GtalkViewController.swift; sourceTree = "<group>"; };
+		ED9CA20A2615C7FD00E8542D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ED9CA20E2615C81C00E8542D /* TutiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutiViewController.swift; sourceTree = "<group>"; };
+		ED9CA2122615CD9100E8542D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB062D324F3D39B6C7FBAD8 /* Pods_blendinglogin1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604919D7AF967002766CAEB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35BA9AE16B84E00D58B56918 /* Pods_blendinglogin1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5EA26E6C6CB9F11D65AFCC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				446B59A5C7B9F082F34E0BB1 /* Pods-blendinglogin1.debug.xcconfig */,
+				7975B7DDB2C9F2413065ECFB /* Pods-blendinglogin1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED9CA1B72615B55700E8542D = {
 			isa = PBXGroup;
 			children = (
 				ED9CA1C22615B55700E8542D /* blendinglogin1 */,
 				ED9CA1C12615B55700E8542D /* Products */,
+				E5EA26E6C6CB9F11D65AFCC6 /* Pods */,
+				604919D7AF967002766CAEB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +96,18 @@
 			children = (
 				ED9CA1C32615B55700E8542D /* AppDelegate.swift */,
 				ED9CA1C52615B55700E8542D /* SceneDelegate.swift */,
-				ED9CA1C72615B55700E8542D /* ViewController.swift */,
 				ED9CA1C92615B55700E8542D /* Main.storyboard */,
 				ED9CA1CC2615B55800E8542D /* Assets.xcassets */,
 				ED9CA1CE2615B55800E8542D /* LaunchScreen.storyboard */,
 				ED9CA1D12615B55800E8542D /* Info.plist */,
+				ED9CA1D82615B9D800E8542D /* GoogleService-Info.plist */,
+				ED9CA1F32615C4E900E8542D /* LoginViewController.swift */,
+				ED9CA1F62615C50400E8542D /* HomeViewController.swift */,
+				ED9CA1F92615C53900E8542D /* PostViewController.swift */,
+				ED9CA2062615C79700E8542D /* GtalkViewController.swift */,
+				ED9CA20A2615C7FD00E8542D /* ProfileViewController.swift */,
+				ED9CA20E2615C81C00E8542D /* TutiViewController.swift */,
+				ED9CA2122615CD9100E8542D /* TabBarController.swift */,
 			);
 			path = blendinglogin1;
 			sourceTree = "<group>";
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED9CA1D42615B55800E8542D /* Build configuration list for PBXNativeTarget "blendinglogin1" */;
 			buildPhases = (
+				82FA6510C49A766E6515F932 /* [CP] Check Pods Manifest.lock */,
 				ED9CA1BC2615B55700E8542D /* Sources */,
 				ED9CA1BD2615B55700E8542D /* Frameworks */,
 				ED9CA1BE2615B55700E8542D /* Resources */,
+				1C6204775E1EE5578698D7E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED9CA1D02615B55800E8542D /* LaunchScreen.storyboard in Resources */,
+				ED9CA1D92615B9D800E8542D /* GoogleService-Info.plist in Resources */,
 				ED9CA1CD2615B55800E8542D /* Assets.xcassets in Resources */,
 				ED9CA1CB2615B55700E8542D /* Main.storyboard in Resources */,
 			);
@@ -132,14 +180,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C6204775E1EE5578698D7E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-blendinglogin1/Pods-blendinglogin1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-blendinglogin1/Pods-blendinglogin1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-blendinglogin1/Pods-blendinglogin1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82FA6510C49A766E6515F932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-blendinglogin1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED9CA1BC2615B55700E8542D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED9CA1C82615B55700E8542D /* ViewController.swift in Sources */,
+				ED9CA20F2615C81C00E8542D /* TutiViewController.swift in Sources */,
+				ED9CA1FA2615C53900E8542D /* PostViewController.swift in Sources */,
+				ED9CA1F72615C50400E8542D /* HomeViewController.swift in Sources */,
+				ED9CA2132615CD9100E8542D /* TabBarController.swift in Sources */,
+				ED9CA1F42615C4E900E8542D /* LoginViewController.swift in Sources */,
 				ED9CA1C42615B55700E8542D /* AppDelegate.swift in Sources */,
 				ED9CA1C62615B55700E8542D /* SceneDelegate.swift in Sources */,
+				ED9CA20B2615C7FD00E8542D /* ProfileViewController.swift in Sources */,
+				ED9CA2072615C79700E8542D /* GtalkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +379,7 @@
 		};
 		ED9CA1D52615B55800E8542D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 446B59A5C7B9F082F34E0BB1 /* Pods-blendinglogin1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +399,7 @@
 		};
 		ED9CA1D62615B55800E8542D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7975B7DDB2C9F2413065ECFB /* Pods-blendinglogin1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

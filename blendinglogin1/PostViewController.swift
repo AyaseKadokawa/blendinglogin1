@@ -1,13 +1,14 @@
 //
-//  ViewController.swift
+//  PostViewController.swift
 //  blendinglogin1
 //
 //  Created by 広瀬綾香 on 2021/04/01.
 //
 
+
 import UIKit
 
-class ViewController: UIViewController {
+class PostViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +17,3 @@ class ViewController: UIViewController {
 
 
 }
-
