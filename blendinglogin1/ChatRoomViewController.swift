@@ -9,10 +9,12 @@ import UIKit
 
 class ChatRoomViewController: UIViewController {
 
+    @IBOutlet weak var chatRoomTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        chatRoomTableView.backgroundColor = .lightGray
     }
-
-
 }

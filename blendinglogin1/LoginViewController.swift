@@ -16,8 +16,7 @@ class LoginViewController: UIViewController {
     
     // ログインボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleLoginButton(_ sender: Any) {
-        //ホーム画面に遷移する
-        self.performSegue(withIdentifier: "Login", sender: nil)
+
         if let address = mailAddressTextField.text, let password = passwordTextField.text {
 
             // アドレスとパスワード名のいずれかでも入力されていない時は何もしない
@@ -36,13 +35,15 @@ class LoginViewController: UIViewController {
                     return
                 }
          print("DEBUG_PRINT: ログインに成功しました。")
+                
+                //ホーム画面に遷移する
                self.performSegue(withIdentifier: "Login", sender: nil)
 
                 // HUDを消す
                 SVProgressHUD.dismiss()
                 
                 // 画面を閉じてタブ画面に戻る
-                self.dismiss(animated: true, completion: nil)
+               // self.dismiss(animated: true, completion: nil)
         }
         }
     }
@@ -66,6 +67,7 @@ class LoginViewController: UIViewController {
                 if let error = error {
                     // エラーがあったら原因をprintして、returnすることで以降の処理を実行せずに処理を終了する
                     print("DEBUG_PRINT: " + error.localizedDescription)
+                    print("DEBUG_PRINT: ユーザー作成に失敗しました。")
                     SVProgressHUD.showError(withStatus: "ユーザー作成に失敗しました。")
                     return
                 }

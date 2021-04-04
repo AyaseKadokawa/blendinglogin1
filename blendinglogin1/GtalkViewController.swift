@@ -12,8 +12,8 @@ class GtalkViewController: UIViewController{
     private let cellId = "cellId"
     
     @IBOutlet weak var chatListTableView: UITableView!
-    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -44,6 +44,12 @@ extension GtalkViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapped table view")
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let ChatRoomViewController = storyboard.instantiateViewController(withIdentifier: "ChatRoom")
+        navigationController?.pushViewController(ChatRoomViewController, animated: true)
+    }
     
 }
 
