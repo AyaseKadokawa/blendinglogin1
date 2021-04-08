@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TutiViewController: UIViewController {
+class KensakuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

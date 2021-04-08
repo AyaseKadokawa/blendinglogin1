@@ -44,6 +44,7 @@ extension GtalkViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    //クリックした時の動作
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tapped table view")
         let storyboard = UIStoryboard.init(name: "Main", bundle: nil)

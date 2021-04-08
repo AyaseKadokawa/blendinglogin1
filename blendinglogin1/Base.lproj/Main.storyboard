@@ -94,8 +94,20 @@
                     <view key="view" contentMode="scaleToFill" id="1n9-ko-YxZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oZ8-Qy-Q4D">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LCm-3N-SEj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LCm-3N-SEj" firstAttribute="trailing" secondItem="oZ8-Qy-Q4D" secondAttribute="trailing" id="2mW-fD-OlE"/>
+                            <constraint firstItem="oZ8-Qy-Q4D" firstAttribute="top" secondItem="LCm-3N-SEj" secondAttribute="top" id="EW4-Ls-vLU"/>
+                            <constraint firstItem="oZ8-Qy-Q4D" firstAttribute="leading" secondItem="LCm-3N-SEj" secondAttribute="leading" id="Q3e-uA-MeN"/>
+                            <constraint firstItem="LCm-3N-SEj" firstAttribute="bottom" secondItem="oZ8-Qy-Q4D" secondAttribute="bottom" id="ecX-aR-w1T"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="2IQ-hQ-J4M"/>
                 </viewController>
@@ -119,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="2789.8550724637685" y="-1.3392857142857142"/>
         </scene>
-        <!--Profile-->
+        <!--Kensaku-->
         <scene sceneID="Jii-pA-9we">
             <objects>
                 <viewController storyboardIdentifier="Profile" modalPresentationStyle="fullScreen" id="gXV-fG-Kg5" customClass="ProfileViewController" customModule="blendinglogin1" customModuleProvider="target" sceneMemberID="viewController">
@@ -129,7 +141,8 @@
                         <viewLayoutGuide key="safeArea" id="1s5-6b-xe6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="BaU-Gf-l1n"/>
+                    <tabBarItem key="tabBarItem" title="Kensaku" image="magnifyingglass" catalog="system" id="BaU-Gf-l1n"/>
+                    <navigationItem key="navigationItem" id="Tew-e1-wSb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otV-el-2OO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarItem title="Item" id="XlH-0C-yvC"/>
@@ -241,51 +254,51 @@
             <point key="canvasLocation" x="2789.8550724637685" y="894.64285714285711"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Zcr-BE-Kio">
+        <scene sceneID="ALF-Gt-UWO">
             <objects>
-                <navigationController id="3Nu-kE-WJe" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E8k-x1-LtK">
+                <navigationController id="3F8-JC-vAB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Ve-M4-rLD">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Paq-jU-CbV" kind="relationship" relationship="rootViewController" id="p07-Se-2tD"/>
+                        <segue destination="VKU-5e-AeD" kind="relationship" relationship="rootViewController" id="Zbb-qE-NvW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x47-pu-lpf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeT-f9-9Al" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3687" y="908"/>
+            <point key="canvasLocation" x="4061" y="895"/>
         </scene>
         <!--Chat Room View Controller-->
-        <scene sceneID="Dca-ov-5h0">
+        <scene sceneID="6jK-Wn-IaA">
             <objects>
-                <viewController storyboardIdentifier="ChatRoom" id="Paq-jU-CbV" customClass="ChatRoomViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SMc-JT-Dkg">
+                <viewController storyboardIdentifier="ChatRoom" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VKU-5e-AeD" customClass="ChatRoomViewController" customModule="blendinglogin1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YbW-hR-11E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Saz-XM-atp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="npo-7I-BoL">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="kHM-ID-QxI"/>
+                        <viewLayoutGuide key="safeArea" id="Ri3-aG-3tL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kHM-ID-QxI" firstAttribute="bottom" secondItem="Saz-XM-atp" secondAttribute="bottom" id="LsX-Na-536"/>
-                            <constraint firstItem="Saz-XM-atp" firstAttribute="top" secondItem="kHM-ID-QxI" secondAttribute="top" id="Tdx-qn-mNR"/>
-                            <constraint firstItem="kHM-ID-QxI" firstAttribute="trailing" secondItem="Saz-XM-atp" secondAttribute="trailing" id="XZ3-SD-93U"/>
-                            <constraint firstItem="Saz-XM-atp" firstAttribute="leading" secondItem="kHM-ID-QxI" secondAttribute="leading" id="bl0-dd-yG0"/>
+                            <constraint firstItem="Ri3-aG-3tL" firstAttribute="bottom" secondItem="npo-7I-BoL" secondAttribute="bottom" id="aOL-Cw-85J"/>
+                            <constraint firstItem="npo-7I-BoL" firstAttribute="top" secondItem="Ri3-aG-3tL" secondAttribute="top" id="d79-Wd-PTF"/>
+                            <constraint firstItem="npo-7I-BoL" firstAttribute="leading" secondItem="Ri3-aG-3tL" secondAttribute="leading" id="h0W-0B-LnE"/>
+                            <constraint firstItem="Ri3-aG-3tL" firstAttribute="trailing" secondItem="npo-7I-BoL" secondAttribute="trailing" id="mkf-KR-I5X"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ozq-HL-IwC"/>
+                    <navigationItem key="navigationItem" id="Pd1-Dw-Nnh"/>
                     <connections>
-                        <outlet property="chatRoomTableView" destination="Saz-XM-atp" id="HLI-0h-ttX"/>
+                        <outlet property="chatRoomTableView" destination="npo-7I-BoL" id="MER-Bh-gf7"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RbT-V4-ejw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VL1-dh-yeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4465" y="895"/>
+            <point key="canvasLocation" x="4907" y="895"/>
         </scene>
         <!--ChatList-->
         <scene sceneID="ncY-fM-dv8">
@@ -317,9 +330,9 @@
                     </tabBar>
                     <connections>
                         <segue destination="ToN-r3-ocx" kind="relationship" relationship="viewControllers" id="D49-dI-jhb"/>
-                        <segue destination="gXV-fG-Kg5" kind="relationship" relationship="viewControllers" id="iWb-zI-MVW"/>
                         <segue destination="W29-jg-71B" kind="relationship" relationship="viewControllers" id="ZbU-8b-lRI"/>
                         <segue destination="bUp-fb-C9T" kind="relationship" relationship="viewControllers" id="8iw-ga-J3R"/>
+                        <segue destination="gXV-fG-Kg5" kind="relationship" relationship="viewControllers" id="lTr-ev-U1n"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPA-go-K5Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -332,7 +345,7 @@
         <image name="btn" width="300" height="40"/>
         <image name="home" width="25" height="25"/>
         <image name="madoka.jpeg" width="665" height="1182"/>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person.3" catalog="system" width="128" height="62"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
