@@ -10,9 +10,21 @@ import Firebase
 import SVProgressHUD
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var profileImageButton: UIButton!
     @IBOutlet weak var mailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var displayNameTextField: UITextField!
+  
+    //プロフィール画像設定
+    @IBAction func tappedProfileImageButton(_ sender: Any) {
+        print("tappedProfileImageButton")
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
+        self.present(imagePickerController, animated: true, completion: nil)
+    }
+    
     
     // ログインボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleLoginButton(_ sender: Any) {
@@ -99,14 +111,32 @@ class LoginViewController: UIViewController {
             }
         }
     }
-
-            
-            
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+}
 
+
+//プロフィール画像設定 imagepicker
+extension LoginViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let editImage = info[.editedImage] as? UIImage{
+            profileImageButton.setImage(editImage.withRenderingMode(.alwaysOriginal), for: .normal)
+        } else if let originalImage = info[.originalImage] as? UIImage {
+            profileImageButton.setImage(originalImage.withRenderingMode(.alwaysOriginal), for: .normal)
+        }
+        
+        profileImageButton.setTitle("", for: .normal)
+        profileImageButton.imageView?.contentMode = .scaleAspectFill
+        profileImageButton.contentHorizontalAlignment = .fill
+        profileImageButton.contentVerticalAlignment = .fill
+        profileImageButton.clipsToBounds = true
+        
+        dismiss(animated: true, completion: nil)
+                  
+    }
+    
 }

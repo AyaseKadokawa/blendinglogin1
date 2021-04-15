@@ -9,15 +9,13 @@ import UIKit
 
 class TimeLineTableViewCell: UITableViewCell {
     
-    
-    
     @IBOutlet weak var timelineImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var usernameLavel: UILabel!
     @IBOutlet weak var timelineTextField: UITextField!
-  //  @IBOutlet weak var likeButton: UIButton!
-  //  @IBOutlet weak var openRoomButton: UIButton!
-  //  @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var bookmarkButton: UIButton!
+    @IBOutlet weak var talkroomButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,5 +26,6 @@ class TimeLineTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
 
 }

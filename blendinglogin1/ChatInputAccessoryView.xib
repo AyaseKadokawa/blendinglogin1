@@ -8,44 +8,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatInputAccessoryView" customModule="blendinglogin1" customModuleProvider="target">
+            <connections>
+                <outlet property="chatTextView" destination="4wL-63-Xrd" id="KYM-Kz-TyG"/>
+                <outlet property="sendButton" destination="UTN-U6-Pgn" id="jMP-eh-Gui"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatInputAccessoryView" customModule="blendinglogin1" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="1064" height="281"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="メッセージが入ります" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4wL-63-Xrd">
-                    <rect key="frame" x="10" y="54" width="978" height="183"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="メッセージが入ります" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4wL-63-Xrd">
+                    <rect key="frame" x="10" y="54" width="994" height="183"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTN-U6-Pgn">
-                    <rect key="frame" x="998" y="130.5" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTN-U6-Pgn">
+                    <rect key="frame" x="1014" y="136" width="30" height="19.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="MeX-Yf-8Ua"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                    <state key="normal" title="Button" image="paperplane.fill" catalog="system"/>
+                    <connections>
+                        <action selector="tappedSendButton:" destination="-1" eventType="touchUpInside" id="M2W-5c-PWo"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="1" green="0.5442753625806217" blue="0.85296490811085368" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UTN-U6-Pgn" secondAttribute="trailing" constant="20" id="MCo-XE-b8y"/>
                 <constraint firstItem="UTN-U6-Pgn" firstAttribute="centerY" secondItem="4wL-63-Xrd" secondAttribute="centerY" id="RQH-pu-3B0"/>
                 <constraint firstItem="4wL-63-Xrd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="bl7-4q-tyd"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4wL-63-Xrd" secondAttribute="bottom" constant="10" id="dcD-kH-2DG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4wL-63-Xrd" secondAttribute="bottom" constant="10" id="imv-Ma-Fiy"/>
                 <constraint firstItem="UTN-U6-Pgn" firstAttribute="leading" secondItem="4wL-63-Xrd" secondAttribute="trailing" constant="10" id="ptf-AW-SUl"/>
                 <constraint firstItem="4wL-63-Xrd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="zCY-6S-Mz4"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="377" y="46"/>
+            <point key="canvasLocation" x="-839" y="233"/>
         </view>
     </objects>
     <resources>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

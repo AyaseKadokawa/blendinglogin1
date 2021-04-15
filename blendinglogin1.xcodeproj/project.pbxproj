@@ -28,6 +28,8 @@
 		ED9CA265261EDD3100E8542D /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA264261EDD3100E8542D /* ChatInputAccessoryView.swift */; };
 		ED9CA271261F2BC300E8542D /* TimeLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED9CA270261F2BC300E8542D /* TimeLineTableViewCell.xib */; };
 		ED9CA274261F2E8700E8542D /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA273261F2E8700E8542D /* TimeLineTableViewCell.swift */; };
+		ED9CA2772626BB9F00E8542D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA2762626BB9F00E8542D /* User.swift */; };
+		ED9CA27A2626BC5A00E8542D /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9CA2792626BC5A00E8542D /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		ED9CA264261EDD3100E8542D /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		ED9CA270261F2BC300E8542D /* TimeLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineTableViewCell.xib; sourceTree = "<group>"; };
 		ED9CA273261F2E8700E8542D /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
+		ED9CA2762626BB9F00E8542D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED9CA2792626BC5A00E8542D /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				ED9CA2122615CD9100E8542D /* TabBarController.swift */,
 				ED9CA270261F2BC300E8542D /* TimeLineTableViewCell.xib */,
 				ED9CA273261F2E8700E8542D /* TimeLineTableViewCell.swift */,
+				ED9CA2762626BB9F00E8542D /* User.swift */,
+				ED9CA2792626BC5A00E8542D /* Tweet.swift */,
 			);
 			path = blendinglogin1;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 				ED9CA1F72615C50400E8542D /* HomeViewController.swift in Sources */,
 				ED9CA2132615CD9100E8542D /* TabBarController.swift in Sources */,
 				ED9CA1F42615C4E900E8542D /* LoginViewController.swift in Sources */,
+				ED9CA27A2626BC5A00E8542D /* Tweet.swift in Sources */,
+				ED9CA2772626BB9F00E8542D /* User.swift in Sources */,
 				ED9CA1C42615B55700E8542D /* AppDelegate.swift in Sources */,
 				ED9CA25A261ED21300E8542D /* ChatRoomTableViewCell.swift in Sources */,
 				ED9CA1C62615B55700E8542D /* SceneDelegate.swift in Sources */,

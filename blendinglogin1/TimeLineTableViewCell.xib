@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeLineCell" rowHeight="204" id="B5E-nU-Kd5" customClass="TimeLineTableViewCell" customModule="blendinglogin1" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellId" rowHeight="204" id="B5E-nU-Kd5" customClass="TimeLineTableViewCell" customModule="blendinglogin1" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="778" height="204"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B5E-nU-Kd5" id="q7p-aZ-mJ3">
@@ -42,11 +42,41 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye3-Kk-EUH">
+                        <rect key="frame" x="301.5" y="146" width="24" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Ye3-Kk-EUH" secondAttribute="height" multiplier="6:5" id="7No-7B-kbA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                        <state key="normal" title="BooKMark" image="bookmark" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6L-N9-mcr">
+                        <rect key="frame" x="375.5" y="146" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="u6L-N9-mcr" secondAttribute="height" multiplier="1:1" id="oNg-lW-6H2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                        <state key="normal" title="TalkRoom" image="plus.message" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNQ-z8-fXB">
+                        <rect key="frame" x="452.5" y="146" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mNQ-z8-fXB" secondAttribute="height" multiplier="1:1" id="r12-pC-6We"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                        <state key="normal" title="Share" image="square.and.arrow.up" catalog="system"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Xpe-08-YmD" firstAttribute="leading" secondItem="q7p-aZ-mJ3" secondAttribute="leading" constant="20" id="0Zb-E9-ibZ"/>
                     <constraint firstItem="v2G-lI-d7b" firstAttribute="top" secondItem="3E2-XN-Rv2" secondAttribute="bottom" constant="10" id="23D-KU-Cma"/>
+                    <constraint firstItem="mNQ-z8-fXB" firstAttribute="leading" secondItem="u6L-N9-mcr" secondAttribute="trailing" constant="50" id="2sL-lW-VAi"/>
+                    <constraint firstItem="u6L-N9-mcr" firstAttribute="centerX" secondItem="q7p-aZ-mJ3" secondAttribute="centerX" id="81X-pR-icw"/>
+                    <constraint firstItem="u6L-N9-mcr" firstAttribute="top" secondItem="v2G-lI-d7b" secondAttribute="bottom" constant="30" id="EQ9-K6-ZFB"/>
                     <constraint firstItem="3E2-XN-Rv2" firstAttribute="top" secondItem="4j3-V8-e3m" secondAttribute="bottom" constant="10" id="HI0-r7-p2L"/>
+                    <constraint firstItem="Ye3-Kk-EUH" firstAttribute="top" secondItem="v2G-lI-d7b" secondAttribute="bottom" constant="30" id="JaQ-jo-asb"/>
+                    <constraint firstItem="u6L-N9-mcr" firstAttribute="leading" secondItem="Ye3-Kk-EUH" secondAttribute="trailing" constant="50" id="QJD-6a-TON"/>
+                    <constraint firstItem="mNQ-z8-fXB" firstAttribute="top" secondItem="v2G-lI-d7b" secondAttribute="bottom" constant="30" id="SwE-Ik-JcA"/>
                     <constraint firstItem="4j3-V8-e3m" firstAttribute="leading" secondItem="Xpe-08-YmD" secondAttribute="trailing" constant="20" id="VP0-gY-gDH"/>
                     <constraint firstItem="v2G-lI-d7b" firstAttribute="leading" secondItem="Xpe-08-YmD" secondAttribute="trailing" constant="20" id="bsV-YC-pv9"/>
                     <constraint firstItem="4j3-V8-e3m" firstAttribute="top" secondItem="q7p-aZ-mJ3" secondAttribute="top" constant="20" id="lT8-HA-csi"/>
@@ -54,7 +84,20 @@
                     <constraint firstItem="Xpe-08-YmD" firstAttribute="top" secondItem="q7p-aZ-mJ3" secondAttribute="top" constant="20" id="uJL-af-Vny"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="295.6521739130435" y="235.71428571428569"/>
+            <connections>
+                <outlet property="bookmarkButton" destination="Ye3-Kk-EUH" id="qsq-Mu-4Ik"/>
+                <outlet property="nameLabel" destination="4j3-V8-e3m" id="18v-kU-afn"/>
+                <outlet property="shareButton" destination="mNQ-z8-fXB" id="jaJ-CX-YnW"/>
+                <outlet property="talkroomButton" destination="u6L-N9-mcr" id="iaU-UR-B8Y"/>
+                <outlet property="timelineImageView" destination="Xpe-08-YmD" id="7SG-Rg-PRo"/>
+                <outlet property="timelineTextField" destination="v2G-lI-d7b" id="HMc-4G-sa8"/>
+            </connections>
+            <point key="canvasLocation" x="364" y="463"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="112" height="128"/>
+        <image name="plus.message" catalog="system" width="128" height="113"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+    </resources>
 </document>
